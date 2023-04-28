@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Ülesanne</h2>
+<div class="alert alert-info">
+    <h4>Teostada lihtne veebirakendus, mis võimaldaks hallata kasutajatoele saadetud pöördumisi.
+    Lihtsustatud süsteemi funktsionaalsus:</h4>
+    <ul>
+        <li>
+            Kasutaja saab sisestada pöördumise.
+        </li>
+        <li>
+            Pöördumisel peab olema kirjeldus, sisestamise aeg, lahendamise tähtaeg. 
+            Sisestamise ajaks märgitakse pöördumise sisestamise aeg, teised kohustuslikud väljad täidab kasutaja.
+        </li>
+        <li>
+            Kasutajale kuvatakse aktiivsed pöördumised koos kõigi väljadega nimekirjas sorteeritult
+            kahanevalt lahendamise tähtaja järgi.
+        </li>
+        <li>
+            Pöördumised, mille lahendamise tähtajani on jäänud vähem kui 1 tund või mis on juba
+            ületanud lahendamise tähtaja, kuvatakse nimekirjas punasena.
+        </li>
+        <li>
+            Kasutaja saab nimekirjas pöördumisi lahendatuks märkida, mis kaotab pöördumise
+            nimekirjast
+        </li>
+    </ul>
+    <h4>Nõuded:</h4>
+    <ul>
+        <li>Testtöö serveripoolne osa lahendada .NET platvormil.</li>
+        <li>Võib eeldada modernse brauseri olemasolu (HTML5 jne).</li>
+        <li> Andmeid ei ole vaja andmebaasi salvestada, võib hoida neid ka mälus.</li>
+        <li>Boonuspunktid, kui lahendust katavad ka testid.</li>
+        <li>Palun töö üles seada GitHub keskkonda</li>
+        <li>Õigus ligipääsuks anda kasutajale karel.golberg@agileworks.eu</li>
+    </ul>
+</div>
