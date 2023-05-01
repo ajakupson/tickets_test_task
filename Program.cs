@@ -23,14 +23,6 @@ app.MapControllers();
 app.UseFileServer(new FileServerOptions()
 {
     FileProvider = new PhysicalFileProvider(
-        Path.Combine(Directory.GetCurrentDirectory(), @"node_modules")),
-    RequestPath = new PathString("/node_modules"),
-    EnableDirectoryBrowsing = true
-});
-
-app.UseFileServer(new FileServerOptions()
-{
-    FileProvider = new PhysicalFileProvider(
         Path.Combine(Directory.GetCurrentDirectory(), @"styles")),
     RequestPath = new PathString("/styles"),
     EnableDirectoryBrowsing = true
