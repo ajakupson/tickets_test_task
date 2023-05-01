@@ -20,30 +20,6 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 
-/*app.UseFileServer(new FileServerOptions()
-{
-    FileProvider = new PhysicalFileProvider(
-        Path.Combine(Directory.GetCurrentDirectory(), @"styles")),
-    RequestPath = new PathString("/styles"),
-    EnableDirectoryBrowsing = true
-});
-
-app.UseFileServer(new FileServerOptions()
-{
-    FileProvider = new PhysicalFileProvider(
-        Path.Combine(Directory.GetCurrentDirectory(), @"dist")),
-    RequestPath = new PathString("/dist"),
-    EnableDirectoryBrowsing = true
-});
-
-app.UseFileServer(new FileServerOptions()
-{
-    FileProvider = new PhysicalFileProvider(
-        Path.Combine(Directory.GetCurrentDirectory(), @"fonts")),
-    RequestPath = new PathString("/fonts"),
-    EnableDirectoryBrowsing = true
-});*/
-
 app.UseStaticFiles();
 
 app.Run();
