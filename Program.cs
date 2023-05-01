@@ -20,7 +20,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 
-app.UseFileServer(new FileServerOptions()
+/*app.UseFileServer(new FileServerOptions()
 {
     FileProvider = new PhysicalFileProvider(
         Path.Combine(Directory.GetCurrentDirectory(), @"styles")),
@@ -42,7 +42,7 @@ app.UseFileServer(new FileServerOptions()
         Path.Combine(Directory.GetCurrentDirectory(), @"fonts")),
     RequestPath = new PathString("/fonts"),
     EnableDirectoryBrowsing = true
-});
+});*/
 
 app.UseStaticFiles();
 
