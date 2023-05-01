@@ -1,7 +1,6 @@
 bin
 node_modules
 obj
-*.csproj
 *.user
 *.sln
 .vs
