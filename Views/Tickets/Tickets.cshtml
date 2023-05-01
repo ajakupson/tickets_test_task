@@ -1,0 +1,10 @@
+﻿@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="tickets"></div>
+
+<script type="text/javascript">
+    let ticketsList = @Html.Raw(@ViewBag.TicketsList);
+</script>
+<script type="text/javascript" src="~/dist/tickets.js"></script>

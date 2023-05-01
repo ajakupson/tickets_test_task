@@ -4,3 +4,34 @@
 .right {
     float: right;
 }
+.ml5 {
+    margin-left: 5px !important
+}
+.mbn {
+    margin-bottom: 0 !important;
+}
+.mb5 {
+    margin-bottom: 5px;
+}
+.mb10 {
+    margin-bottom: 10px !important;
+}
+.mb15 {
+    margin-bottom: 15px !important;
+}
+.rszn {
+    resize:none;
+}
+.db {
+    display: block !important;
+}
+.fcnw {
+    display: flex;
+    flex-flow: column nowrap
+}
+.pointer {
+    cursor: pointer;
+}
+.underline:hover {
+    text-decoration: underline;
+}

@@ -1,7 +1,8 @@
 const path = require('path');
 var webpack = require('webpack');
 var fs = require('fs');
-const { VueLoaderPlugin } = require('vue-loader')
+const { VueLoaderPlugin } = require('vue-loader');
+const { CssLoaderPlugin } = require('css-loader');
 
 var appBasePath = './vue/';
 var distPath = './dist/';
@@ -24,7 +25,7 @@ module.exports = {
     filename: '[name].js'
   },
   resolve: {
-    extensions: ['.js', '.ts', '.vue', '.json'],
+    extensions: ['.js', '.ts', '.vue', '.json', '.css'],
     alias: {
         '$vue$': 'vue/dist/vue.esm-bundler.js',
         '@': path.join(__dirname, appBasePath)
@@ -35,6 +36,10 @@ module.exports = {
       {
         test: /\.vue$/,
         loader: 'vue-loader'
+      },
+      {
+          test: /\.css$/,
+          loader: 'css-loader'
       }
     ]
     },

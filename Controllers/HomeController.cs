@@ -5,9 +5,9 @@ namespace agileworks_1.Controllers
     [Route("[controller]")]
     public class HomeController : Controller
     {
-        private readonly ILogger<TaskController> _logger;
+        private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<TaskController> logger)
+        public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }
@@ -15,7 +15,8 @@ namespace agileworks_1.Controllers
         [HttpGet]
         public ViewResult Home()
         {
-            return View("./Views/Home.cshtml");
+            ViewBag.MenuSelection = "home";
+            return View("Home");
         }
     }
 }

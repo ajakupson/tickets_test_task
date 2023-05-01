@@ -15,7 +15,8 @@ namespace agileworks_1.Controllers
         [HttpGet]
         public ViewResult Home()
         {
-            return View("./Views/Task.cshtml");
+            ViewBag.MenuSelection = "task";
+            return View("Task");
         }
     }
 }

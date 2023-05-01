@@ -6,8 +6,11 @@
     <title>@ViewBag.Title</title>
 
     <link href="~/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="~/Styles/helpers.css" rel="stylesheet" type="text/css" />
-    <link href="~/Styles/main.css" rel="stylesheet" type="text/css" />
+    <link href="~/styles/helpers.css" rel="stylesheet" type="text/css" />
+    <link href="~/styles/main.css" rel="stylesheet" type="text/css" />
+    <link href="~/styles/date-picker.css" rel="stylesheet" type="text/css" />
+    <link href="~/fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="~/node_modules/toastr/build/toastr.min.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <div id="app">
@@ -19,10 +22,13 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="task">Task</a>
+                        <a class="@("nav-link " + (ViewBag.MenuSelection == "home" ? "selected" : ""))" href="home">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="@("nav-link " + (ViewBag.MenuSelection == "task" ? "selected" : ""))" href="task">Task</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="tickets">Tickets <span class="badge danger">5</span></a>
+                        <a class="@("nav-link " + (ViewBag.MenuSelection == "tickets" ? "selected" : ""))" href="tickets">Tickets <!--<span class="badge danger">5</span>--></a>
                     </li>
                 </ul>
             </div>
@@ -33,5 +39,6 @@
     </div>
     <script type="text/javascript" src="~/node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script type="text/javascript" src="~/node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="~/node_modules/toastr/build/toastr.min.js"></script>
 </body>
 </html>

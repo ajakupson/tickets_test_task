@@ -1,6 +1,6 @@
-﻿import { createApp } from 'vue'
-import App from './tickets.vue'
+﻿import { createApp } from 'vue';
+import Tickets from './tickets.vue';
 
-const app = createApp(App)
+const app = createApp(Tickets);
 
-app.mount('#tickets')
+app.mount('#tickets');

@@ -2,3 +2,32 @@
     color: #fff;
     background-color: #dc3545;
 }
+.ticket-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+.red {
+    color: #fb041b;
+}
+.navbar .selected {
+    border-bottom: 1px solid white;
+}
+.badge-success {
+    color: #fff;
+    background-color: #28a745;
+}
+.badge-warning {
+    color: #212529;
+    background-color: #ffc107;
+}
+.badge-danger {
+    color: #fff;
+    background-color: #dc3545;
+}
+.card-text.collapsed {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
